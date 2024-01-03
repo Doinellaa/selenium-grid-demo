@@ -57,7 +57,7 @@ public class Driver {
                         ChromeOptions chromeOptions = new ChromeOptions();
                         chromeOptions.addArguments("--start-maximized"); // will maximize the window/ how to change the window size?
                         driverPool.set(new RemoteWebDriver(url, chromeOptions));
-                        //driverPool.set(new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"),desiredCapabilities));
+                        //driverPool.set(new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"),desiredCapabilities)); /
 
                     } catch (Exception e) {
                         e.printStackTrace();
