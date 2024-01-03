@@ -52,10 +52,10 @@ public class Driver {
                 case "remote-chrome":
                     try {
                         // assign your grid server address
-                        String gridAddress = "34.239.154.115";
+                        String gridAddress = "44.202.100.36";
                         URL url = new URL("http://"+ gridAddress + ":4444/wd/hub");
                         ChromeOptions chromeOptions = new ChromeOptions();
-                        chromeOptions.addArguments("--start-maximized");
+                        chromeOptions.addArguments("--start-maximized"); // will maximize the window/ how to change the window size?
                         driverPool.set(new RemoteWebDriver(url, chromeOptions));
                         //driverPool.set(new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"),desiredCapabilities));
 
